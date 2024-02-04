@@ -1,0 +1,68 @@
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* semi-transparent background */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .overlay button {
+    padding: 10px;
+    background-color: #fff;
+    color: #000;
+    cursor: pointer;
+  }
+
+  .player {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .closeButton {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+  .playerGroup {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 400px;
+  }
+
+  .playerButton button {
+    margin: 20px 200px 20px 200px;
+  }
+
+  .timeStamp {
+    color: rgb(228, 228, 228);
+  }
+
+  .thumbnail {
+    border-radius: 10px;
+    max-width: 300px;
+    max-height: 300px;
+  }
+
+  .playButton {
+    border: none;
+    background: none;
+    padding: 0;
+    margin: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+  }
+  .overlay button{
+    background-color: #F4D35E;
+    border-radius: 60px;
+    height: 60px;
+    width: 60px;
+  }
+  
