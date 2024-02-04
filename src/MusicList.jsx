@@ -45,7 +45,7 @@ const MusicList = () => {
     }
   };
 
-  const fetchAllMusic = () => {
+  const fetchAllMusic = () => { //fetches all music from api
     const endpoint = 'http://localhost:8080/api/music';
     fetchMusicData(endpoint);
   };
