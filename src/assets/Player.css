@@ -4,7 +4,9 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.5); /* semi-transparent background */
+    background: url('./bg.jpg'); /* background */
+    background-repeat: no-repeat;
+    background-size: cover;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -65,4 +67,83 @@
     height: 60px;
     width: 60px;
   }
+  
+
+  .playingTitle {
+    color: #FFFFFF;
+    margin: 90px 0 2px 0;
+  }
+
+  .playingArtist {
+    font-size: 20px;
+    color: white;
+  }
+
+
+  body {
+    padding-top: 60px;
+    margin: 20px;
+    background-color: #141414;
+    color: #e6e6e6;
+    font-family: 'SF Pro';
+  }
+
+  .nav{
+    position: fixed;
+    background-color: #141414;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 25px ;
+  }
+  .navContent {
+    width: 85%;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+  }
+
+  .logoName{
+    font-weight: 200;
+    margin-right: 25px;
+  }
+
+  .logoName span{
+    font-weight: 500;
+    color: #ffb703;
+  }
+
+  .searchBar {
+    appearance: none;
+    background-color: #282828;
+    color: #939393;
+    border: none;
+    font-family: 'SF Pro';
+    padding: 12px 30px 12px 20px;
+    border: #202020;
+    width: 200px;
+    text-align: left;
+    border-radius: 10px;
+    margin-right: 10px;
+  }
+
+  .searchButton {
+    appearance: none;
+    background-color: #ffb703;
+    color: #141414;
+    border: none;
+    font-family: 'SF Pro';
+    font-weight: 600;
+    padding: 12px 20px 12px 20px;
+    border-radius: 10px;
+    margin-right: 50px;
+    
+
+    
+
+  }
+  
   
