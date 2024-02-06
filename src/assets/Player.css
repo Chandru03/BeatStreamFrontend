@@ -1,15 +1,15 @@
 .overlay {
     position: fixed;
-    top: 0;
+    bottom: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
-    background: url('./bg.jpg'); /* background */
+    width: 70%;
+    height: 12%;
+    background: #3f3f3f; /* background */
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: left;
     align-items: center;
   }
   
@@ -22,14 +22,31 @@
 
   .player {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
+    margin-left: 10px;
+    justify-content: space-between;
   }
+
+  .player img{
+    height: 60px;
+    width: 60px;
+    border-radius: 5px;
+  }
+
+  .playInfo{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    margin-left: 10px;
+  }
+  
 
   .closeButton {
     position: absolute;
-    top: 10px;
-    right: 10px;
+    top: 90px;
+    left: 10px;
+    display: none;
   }
   .playerGroup {
     display: flex;
@@ -38,19 +55,22 @@
     width: 400px;
   }
 
-  .playerButton button {
-    margin: 20px 200px 20px 200px;
-  }
+.playerButton{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+
+}
+.seekBar {
+  width: 250px;
+
+}
 
   .timeStamp {
     color: rgb(228, 228, 228);
   }
 
-  .thumbnail {
-    border-radius: 10px;
-    max-width: 300px;
-    max-height: 300px;
-  }
+
 
   .playButton {
     border: none;
@@ -72,17 +92,26 @@
   .playingTitle {
     color: #FFFFFF;
     margin: 90px 0 2px 0;
+    font-size: 18px;
+    font-weight: 400;
+    margin: 0;
   }
 
   .playingArtist {
     font-size: 20px;
-    color: white;
+    color: rgb(188, 188, 188);
+    font-size: 14px;
+    font-weight: 400;
+    margin: 0;
   }
-
+  .playInfoGroup {
+    display: flex;
+    align-items: center;
+  }
 
   body {
     padding-top: 60px;
-    margin: 20px;
+    margin: 10px;
     background-color: #141414;
     color: #e6e6e6;
     font-family: 'SF Pro';
@@ -98,6 +127,7 @@
     align-items: center;
     justify-content: space-between;
     padding: 0 25px ;
+    z-index: 1;
   }
   .navContent {
     width: 85%;
@@ -140,10 +170,88 @@
     padding: 12px 20px 12px 20px;
     border-radius: 10px;
     margin-right: 50px; 
-    
-
-    
-
   }
   
+  .musicArray {
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+  }
+
+  .musicArray li {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .musicTitle{
+    font-weight: 400;
+    font-size: 20px;
+    margin-bottom: 5px;
+  }
+
+  .musicArtist {
+    font-size: 12px;
+    font-weight:200;
+    text-overflow: clip;
+  }
+
+  .listThumbnail {
+    border-radius: 20px;
+    margin-bottom: 10px;
+  }
+
+  .musicInfo{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .belowThumbnail {
+    display: flex;
+    max-width: 200px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .addQueueButton {
+    appearance: none;
+    background-color: #ffb703;
+    color: #141414;
+    border: none;
+    
+    width: 28px;
+    height: 28px;
+    padding: 5px 1px;
+    border-radius: 10px;
+  }
+  .addMusicForm{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap:2rem;
+
+  }
+
+.sections {
+  display: flex;
+  flex-direction: row;
+
+}
+
+.leftPanel {
+  width: 70%;
+  z-index: 0;
+}
+
+.rightPanel {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 30%;
+  height: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+  background-color: #1e1e1e;
+  z-index: 0;
   
+}
