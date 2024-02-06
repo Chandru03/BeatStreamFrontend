@@ -12,6 +12,21 @@
     justify-content: left;
     align-items: center;
   }
+
+  .overlay2 {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 70%;
+    height: 100%;
+    background: #3f3f3f; /* background */
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+  }
   
   .overlay button {
     padding: 10px;
@@ -28,6 +43,17 @@
     justify-content: space-between;
   }
 
+  .controlButton{
+    background-color: #d3d3d3!important;
+    border-radius: 60px;
+    height: 50px!important;
+    width: 50px!important;
+    appearance: none;
+    border: none;
+    margin-right: 10px;
+
+  }
+
   .player img{
     height: 60px;
     width: 60px;
@@ -39,6 +65,7 @@
     flex-direction: column;
     justify-content: left;
     margin-left: 10px;
+    margin-right: 10px;
   }
   
 

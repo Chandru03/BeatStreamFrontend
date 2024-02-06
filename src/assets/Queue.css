@@ -23,15 +23,30 @@
     
 }
 
+.deleteButton {
+    appearance: none;
+    border: none;
+    background-color: transparent;
+}
+
+.queueTrackInfoGroup {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
 .queueList li{
     display: flex;
     flex-direction: row;
     gap: 20px;
     align-items: center;
+    justify-content: space-between;
     padding: 10px;
     background-color: #2b2b2b;
     border-radius: 10px;
 }
+
+
 
 .queueList img{
     width: 70px;
