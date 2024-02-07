@@ -138,7 +138,7 @@ const YouTubeAudioPlayer = ({ videoId, onEnd, isRepeat }) => {
               style={{
                 width: `${(currentTime / duration) * 100}%`,
                 height: "100%",
-                background: "#F95738",
+                background: "#02c39a",
                 borderRadius: "10px",
               }}
             />

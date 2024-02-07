@@ -109,7 +109,7 @@
     outline: inherit;
   }
   .overlay button{
-    background-color: #F4D35E;
+    background-color: #E086D3;
     border-radius: 60px;
     height: 60px;
     width: 60px;
@@ -170,7 +170,7 @@
 
   .logoName span{
     font-weight: 500;
-    color: #ffb703;
+    color: #E086D3;
   }
 
   .searchBar {
@@ -189,7 +189,7 @@
 
   .searchButton{
     appearance: none;
-    background-color: #ffb703;
+    background-color: #E086D3;
     color: #141414;
     border: none;
     font-family: 'SF Pro';
@@ -203,6 +203,7 @@
     display: flex;
     gap: 25px;
     flex-wrap: wrap;
+    margin-bottom: 110px;
   }
 
   .musicArray li {
@@ -215,6 +216,7 @@
     font-size: 20px;
     margin-bottom: 5px;
   }
+
 
   .musicArtist {
     font-size: 12px;
@@ -242,7 +244,7 @@
 
   .addQueueButton {
     appearance: none;
-    background-color: #ffb703;
+    background-color: #E086D3;
     color: #141414;
     border: none;
     
