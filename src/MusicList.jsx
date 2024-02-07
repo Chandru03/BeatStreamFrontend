@@ -413,17 +413,37 @@ const MusicList = () => {
                   isRepeat={isRepeatTrack}
                 />
               </div>
-              <button className="closeButton" onClick={closeOverlay}>
-                close
-              </button>
+              
             </div>
           )}
           {showAddMusicOverlay && (
             <div className="overlay2">
               <div className="addMusicForm">
+                <div className="formContent">
+                <div className="labels">
                 <label>
                   Track Title:
-                  <input
+                 
+                </label>
+                <label>
+                  Artist:
+                  
+                </label>
+                <label>
+                  Year:
+                  
+                </label>
+                <label>
+                  Thumbnail Link:
+                  
+                </label>
+                <label>
+                  YouTube Link:
+                  
+                </label>
+                </div>
+<div className="addInput">
+<input
                     type="text"
                     value={newMusicData.title}
                     onChange={(e) =>
@@ -433,9 +453,6 @@ const MusicList = () => {
                       })
                     }
                   />
-                </label>
-                <label>
-                  Artist:
                   <input
                     type="text"
                     value={newMusicData.artist}
@@ -446,9 +463,6 @@ const MusicList = () => {
                       })
                     }
                   />
-                </label>
-                <label>
-                  Year:
                   <input
                     type="text"
                     value={newMusicData.year}
@@ -456,9 +470,6 @@ const MusicList = () => {
                       setNewMusicData({ ...newMusicData, year: e.target.value })
                     }
                   />
-                </label>
-                <label>
-                  Thumbnail Link:
                   <input
                     type="text"
                     value={newMusicData.thumbnail}
@@ -469,9 +480,6 @@ const MusicList = () => {
                       })
                     }
                   />
-                </label>
-                <label>
-                  YouTube Link:
                   <input
                     type="text"
                     value={newMusicData.youtubeLink}
@@ -482,8 +490,8 @@ const MusicList = () => {
                       })
                     }
                   />
-                </label>
-
+</div>
+                </div>
                 <button onClick={handleAddMusicSubmit}>Submit</button>
               </div>
               <button className="closeButton" onClick={closeOverlay}>
